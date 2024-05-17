@@ -8,7 +8,7 @@ a given user/UID on a given (mounted) folder.
 ## Usage
 
 1. build the image using `docker build -t <image name> .`
-2. run a container using, e.g.,  `docker run --rm --name <container name> -v <mount point>:/file -p <port>:22 -e USER=<username> -e PASS=<password> -e UID=<UID> <image name>`
+2. run a container using, e.g.,  `docker run --rm --name <container name> -v <mount point>:/file -p <port>:22 -e USER=<username> -e PASS=<password> -e UID=<UID> -e GID=<GID> <image name>`
 3. access sshd using `ssh -p <port> <usename>@<hostname>`
 
 ## Author
